@@ -1,0 +1,64 @@
+import { NavLink, Outlet } from "react-router-dom";
+
+export default function Layout() {
+  const linkClass = ({ isActive }) =>
+    `px-4 py-2 rounded-lg text-sm font-semibold transition ${
+      isActive
+        ? "bg-orange-500 text-neutral-950"
+        : "text-neutral-400 hover:text-white"
+    }`;
+
+  return (
+    <div className="max-w-6xl mx-auto min-h-screen flex flex-col pb-20 md:pb-0">
+      {/* هدر بالا */}
+      <header className="sticky top-0 z-40 flex items-center justify-between px-5 py-4 border-b border-neutral-800 backdrop-blur">
+        <div className="flex items-center gap-2 font-bold tracking-wide uppercase">
+          <span className="w-6 h-6 rounded-md bg-orange-500 text-neutral-950 flex items-center justify-center text-sm font-extrabold">
+            W
+          </span>
+          Watch<span className="text-orange-500">list</span>
+        </div>
+
+        <nav className="hidden md:flex gap-1 bg-neutral-900 border border-neutral-800 rounded-xl p-1">
+          <NavLink to="/" end className={linkClass}>
+            Search
+          </NavLink>
+          <NavLink to="/dashboard" className={linkClass}>
+            Dashboard
+          </NavLink>
+          <NavLink to="/settings" className={linkClass}>
+            Settings
+          </NavLink>
+        </nav>
+      </header>
+
+      {/* محتوای صفحه */}
+      <main className="flex-1 px-5 py-6">
+        <Outlet />
+      </main>
+
+      {/* تب‌بار موبایل */}
+      <nav className="fixed bottom-0 inset-x-0 md:hidden flex bg-neutral-950/90 border-t border-neutral-800 backdrop-blur px-2 py-2">
+        <NavLink
+          to="/"
+          end
+          className="flex-1 flex flex-col items-center gap-1 text-xs"
+        >
+          <span className="text-lg">🔍</span>Search
+        </NavLink>
+        <NavLink
+          to="/dashboard"
+          className="flex-1 flex flex-col items-center gap-1 text-xs"
+        >
+          <span className="text-lg">🎞</span>Dashboard
+        </NavLink>
+        <NavLink
+          to="/settings"
+          className="flex-1 flex flex-col items-center gap-1 text-xs"
+        >
+          <span className="text-lg">⚙</span>Settings
+        </NavLink>
+      </nav>
+    </div>
+  );
+}
