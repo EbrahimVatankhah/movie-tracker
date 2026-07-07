@@ -17,9 +17,9 @@ export default function Layout() {
       <header className="sticky top-0 z-40 flex items-center justify-between px-5 py-4 border-b border-neutral-200 dark:border-neutral-800 backdrop-blur bg-white/90 dark:bg-neutral-950/90">
         <div className="flex items-center gap-2 font-bold tracking-wide uppercase">
           <span className="w-6 h-6 rounded-md bg-orange-500 text-neutral-950 flex items-center justify-center text-sm font-extrabold">
-            W
+            MT
           </span>
-          Watch<span className="text-orange-500">list</span>
+          Movie<span className="text-orange-500">Tracker</span>
         </div>
 
         <nav className="hidden md:flex gap-1 bg-neutral-100 dark:bg-neutral-900 border border-neutral-200 dark:border-neutral-800 rounded-xl p-1">

@@ -8,7 +8,6 @@ export function WatchlistProvider({ children }) {
   const [storedMovies, setStoredMovies] = useLocalStorage("watchlist", []);
   const [movies, dispatch] = useReducer(watchlistReducer, storedMovies);
 
-  // هر وقت movies (بعد از هر dispatch) عوض شد، بریزش تو localStorage
   useEffect(() => {
     setStoredMovies(movies);
   }, [movies]);
@@ -25,7 +24,7 @@ export function WatchlistProvider({ children }) {
 export function useWatchlist() {
   const context = useContext(WatchlistContext);
   if (!context) {
-    throw new Error("useWatchlist باید داخل WatchlistProvider استفاده بشه");
+    throw new Error("Error");
   }
   return context;
 }

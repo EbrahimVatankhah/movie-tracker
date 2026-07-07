@@ -31,6 +31,6 @@ export function ToastProvider({ children }) {
 
 export function useToast() {
   const ctx = useContext(ToastContext);
-  if (!ctx) throw new Error("useToast باید داخل ToastProvider استفاده بشه");
+  if (!ctx) throw new Error("Error");
   return ctx;
 }

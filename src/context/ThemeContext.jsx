@@ -21,6 +21,6 @@ export function ThemeProvider({ children }) {
 
 export function useTheme() {
   const context = useContext(ThemeContext);
-  if (!context) throw new Error("useTheme باید داخل ThemeProvider استفاده بشه");
+  if (!context) throw new Error("Error");
   return context;
 }

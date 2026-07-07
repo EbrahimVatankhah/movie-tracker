@@ -21,7 +21,6 @@ export default function MovieDetail() {
 
   const textareaRef = useRef(null);
 
-  // همیشه جزئیات کامل رو از OMDb می‌گیریم، چه فیلم تو واچ‌لیست باشه چه نباشه
   useEffect(() => {
     setLoading(true);
     fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}&plot=full`)
@@ -32,7 +31,6 @@ export default function MovieDetail() {
       .finally(() => setLoading(false));
   }, [id]);
 
-  // فوکوس خودکار فقط وقتی فیلم قبلاً تو واچ‌لیسته (یعنی textarea وجود داره)
   useEffect(() => {
     if (savedMovie) textareaRef.current?.focus();
   }, [savedMovie]);
@@ -159,7 +157,6 @@ export default function MovieDetail() {
             </p>
           )}
 
-          {/* حالت ۱: فیلم هنوز اضافه نشده — فقط دکمه‌ی Add */}
           {!savedMovie && (
             <button
               onClick={handleAddToWatchlist}
@@ -169,7 +166,6 @@ export default function MovieDetail() {
             </button>
           )}
 
-          {/* حالت ۲: فیلم تو واچ‌لیسته — امتیاز، یادداشت، وضعیت */}
           {savedMovie && (
             <>
               <div className="flex flex-wrap gap-2.5 mb-6">

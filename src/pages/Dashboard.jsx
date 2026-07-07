@@ -65,7 +65,6 @@ export default function Dashboard() {
         <EmptyState />
       ) : (
         <>
-          {/* نوار فیلتر */}
           <div className="flex flex-wrap items-center gap-2 mt-5">
             <button
               className={chipClass(statusFilter === "all")}
@@ -128,7 +127,6 @@ export default function Dashboard() {
             </span>
           </div>
 
-          {/* گرید */}
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mt-6">
             {visibleMovies.map((movie) => (
               <WatchlistCard

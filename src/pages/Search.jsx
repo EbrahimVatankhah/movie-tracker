@@ -28,7 +28,6 @@ export default function Search() {
 
   const { movies, dispatch, ACTIONS } = useWatchlist();
 
-  // debounce: هر تغییر query، ۵۰۰ میلی‌ثانیه صبر می‌کنه بعد fetch می‌زنه
   useEffect(() => {
     if (!query.trim()) {
       setResults([]);
@@ -61,7 +60,6 @@ export default function Search() {
     return () => clearTimeout(timer);
   }, [query]);
 
-  // هر بار جست‌وجوی جدید، شمارنده‌ی نمایش رو ریست کن
   useEffect(() => {
     setVisibleCount(VISIBLE_STEP);
   }, [results]);
