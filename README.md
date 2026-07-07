@@ -45,7 +45,7 @@ Get a free key at [omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx)
 npm run dev
 \`\`\`
 
-Created with Love and Coffee by Ebrahim 💖 Vatankhah (ebrahim-vatankhah.ir)
+Created with Love and Coffee by Ebrahim 💖 Vatankhah (http://ebrahim-vatankhah.ir)
 
 ## 🌐 Live Demo
 [https://EbrahimVatankhah.github.io/movie-tracker/](https://EbrahimVatankhah.github.io/movie-tracker/)
