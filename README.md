@@ -18,7 +18,7 @@ Built as a portfolio project to practice React Hooks, Context + Reducer, custom 
   <img src="./screenshots/desktop-search.png" width="90%" alt="Search page" />
   <img src="./screenshots/desktop-dashboard.png" width="90%" alt="Dashboard page" />
   <img src="./screenshots/desktop-moviedetail.png" width="90%" alt="Movie detail page" />
-  <img src="./screenshots/mobile.png" width="90%" alt="Mobile" />
+  <img src="./screenshots/mobile.png" width="50%" alt="Mobile" />
 </p>
 
 ## 🛠 Tech Stack
