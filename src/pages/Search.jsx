@@ -49,10 +49,10 @@ export default function Search() {
           setResults(data.Search.slice(0, MAX_RESULTS));
         } else {
           setResults([]);
-          setError(data.Error || "نتیجه‌ای پیدا نشد");
+          setError(data.Error || "Movie not found");
         }
       } catch (err) {
-        setError("خطا در ارتباط با سرور");
+        setError("Server Connection Error");
       } finally {
         setLoading(false);
       }
@@ -96,20 +96,20 @@ export default function Search() {
         className="text-3xl font-bold"
         style={{ fontFamily: "Oswald, sans-serif" }}
       >
-        دنبال چه فیلمی می‌گردی؟
+        Find Your Next Movie 🍿
       </h1>
       <p className="text-neutral-400 text-sm mt-1">
-        اسم فیلم رو بنویس، از OMDb می‌گیریمش.
+        Please Insert Movie Name . . .
       </p>
 
-      <div className="flex items-center gap-3 bg-neutral-900 border border-neutral-800 rounded-2xl px-4 py-3 mt-5">
+      <div className="flex items-center gap-3 bg-white dark:bg-black border border-neutral-800 rounded-2xl px-4 py-3 mt-5">
         <span className="text-neutral-400">🔍</span>
         <input
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="مثلاً Interstellar"
-          className="flex-1 bg-transparent outline-none text-white placeholder:text-neutral-500"
+          placeholder="Example Interstellar"
+          className="flex-1 bg-transparent outline-none text-black dark:text-white font-bold placeholder:text-neutral-500"
         />
       </div>
 
@@ -140,7 +140,7 @@ export default function Search() {
             }
             className="px-6 py-2.5 rounded-xl border border-neutral-700 text-sm font-semibold hover:border-orange-500 hover:text-orange-500 transition"
           >
-            نمایش بیشتر ({results.length - visibleCount} فیلم دیگه)
+            View ({results.length - visibleCount} More)
           </button>
         </div>
       )}
