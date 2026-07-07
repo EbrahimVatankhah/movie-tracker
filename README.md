@@ -15,10 +15,10 @@ Built as a portfolio project to practice React Hooks, Context + Reducer, custom 
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="./screenshots/desktop-search.png" width="45%" alt="Search page" />
-  <img src="./screenshots/desktop-dashboard.png" width="45%" alt="Dashboard page" />
-  <img src="./screenshots/desktop-moviedetail.png" width="45%" alt="Movie detail page" />
-  <img src="./screenshots/mobile.png" width="45%" alt="Mobile" />
+  <img src="./screenshots/desktop-search.png" width="90%" alt="Search page" />
+  <img src="./screenshots/desktop-dashboard.png" width="90%" alt="Dashboard page" />
+  <img src="./screenshots/desktop-moviedetail.png" width="90%" alt="Movie detail page" />
+  <img src="./screenshots/mobile.png" width="90%" alt="Mobile" />
 </p>
 
 ## 🛠 Tech Stack
@@ -45,8 +45,9 @@ Get a free key at [omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx)
 npm run dev
 \`\`\`
 
-Created with Love and Coffee by Ebrahim Vatankhah (ebrahim-vatankhah.ir)
+Created with Love and Coffee by Ebrahim 💖 Vatankhah (ebrahim-vatankhah.ir)
 
 ## 🌐 Live Demo
+[https://EbrahimVatankhah.github.io/movie-tracker/](https://EbrahimVatankhah.github.io/movie-tracker/)
 
 MIT
