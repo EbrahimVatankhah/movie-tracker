@@ -1,16 +1,52 @@
-# React + Vite
+# 🎬 Movie Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A frontend-only movie watchlist app built with **React + Tailwind CSS + React Router**, powered by the [OMDb API](https://www.omdbapi.com/). Search movies, add them to your watchlist, track watched status, rate them, and write notes — all saved locally in your browser.
 
-Currently, two official plugins are available:
+Built as a portfolio project to practice React Hooks, Context + Reducer, custom hooks, and routing.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🔍 Search movies (debounced, with skeleton loading)
+- 🎞 Dashboard with filters, sorting, and "View more" pagination
+- 📄 Movie detail page with rating and auto-saving notes
+- 🌗 Dark / light theme (persisted)
+- 💾 Everything saved to localStorage
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📸 Screenshots
 
-## Expanding the ESLint configuration
+<p align="center">
+  <img src="./screenshots/desktop-search.png" width="45%" alt="Search page" />
+  <img src="./screenshots/desktop-dashboard.png" width="45%" alt="Dashboard page" />
+  <img src="./screenshots/desktop-moviedetail.png" width="45%" alt="Movie detail page" />
+  <img src="./screenshots/mobile.png" width="45%" alt="Mobile" />
+</p>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+React · React Router · Tailwind CSS · Vite · OMDb API
+
+## 🚀 Getting Started
+
+\`\`\`bash
+git clone https://github.com/EbrahimVatankhah/movie-tracker.git
+cd movie-tracker
+npm install
+\`\`\`
+
+Create a \`.env\` file in the project root:
+
+\`\`\`
+VITE_OMDB_API_KEY=your_api_key_here
+\`\`\`
+
+Get a free key at [omdbapi.com/apikey.aspx](https://www.omdbapi.com/apikey.aspx).
+
+\`\`\`bash
+npm run dev
+\`\`\`
+
+Created with Love and Coffee by Ebrahim Vatankhah (ebrahim-vatankhah.ir)
+
+## 🌐 Live Demo
+
+MIT
